@@ -6,6 +6,8 @@ ntsc素材に最適。
 使い方；
 
 
+```
+
 import vapoursynth as vs
 
 
@@ -25,9 +27,17 @@ deinterlaced = core.sd.StableDeinterlacer(clip1,tff=1)
 
 deinterlaced .set_output()
 
+```
+
 かならずFPSを明示してください。
 
 ボブのみのデインターレースですので、MPV Playerにて
 
 
- vf toggle fps=ntsc;vf toggle vapoursynth="~~/vs/Deint.vpy"　と事前にシングルレートFPS値も指定してください。
+```
+
+ vf toggle fps=ntsc;vf toggle vapoursynth="~~/vs/Deint.vpy"
+
+
+```
+と事前にシングルレートFPS値も指定してください。
